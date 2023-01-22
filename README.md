@@ -1,30 +1,30 @@
-## Quick start
+## Быстрый старт
 
-* Install MODX Revolution
+* Учтановитт MODX Revolution v3.*
 
-* Upload this package into the `Extras` directory in the root of site
+* Загрузите этот пакет в каталог `Extras` в корне сайта.
 
-* You need to rename it to `AnyOtherName` your package, so enter into SSH console and run
+* Вам нужно переименовать пакет в название вашего пакета (например: `AnyOtherName`), поэтому войдите в консоль SSH и запустите
 ```
-php ~/www/Extras/ModExtra/rename_it.php AnyOtherName
+php ~/www/Extras/ModExtra3/rename_it.php AnyOtherName
 ```
-*path on your site may differs*
+*название пакета может быть любым но начинаться с большой буквы*
 
-* Then install it on dev site
+* Установка пакета на сайте разработки
 ```
 php ~/www/Extras/AnyOtherName/_build/build.php
 ``` 
 
-## Settings
+## Настройки
 
-See `_build/config.inc.php` for editable package options.
+См. `_build/config.inc.php` для редактируемых параметров пакета.
 
-All resolvers and elements are in `_build` path. All files that begins not from `.` or `_` will be added automatically. 
+Все resolvers и elements находятся в пути `_build`. Все файлы, начинающиеся не с `.` или `_`, будут добавлены автоматически.
 
-If you will add a new type of element, you will need to add the method with that name into `build.php` script as well.
+Если вы добавите новый тип элемента, вам также нужно будет добавить метод с таким именем в скрипт `build.php`.
 
-## Build and download
+## Собрать и скачать
 
-You can build package at any time by opening `http://dev.site.com/Extras/AnyOtherName/_build/build.php`
+Вы можете собрать пакет в любое время, открыв `http://dev.site.com/Extras/AnyOtherName/_build/build.php`
 
-If you want to download built package - just add `?download=1` to the address.
+Если вы хотите скачать готовый пакет - добавьте `?download=1` в адрес сборки.
